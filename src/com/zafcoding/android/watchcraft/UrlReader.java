@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.ArrayList;
 
+
 public class UrlReader {
 
 	public ArrayList<String> getFromUrl(URL url) throws IOException{
