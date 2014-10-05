@@ -3,6 +3,7 @@ package com.zafcoding.android.watchcraft;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -20,6 +21,9 @@ public class ServersActity extends Activity {
 	String username = null;
 	ArrayList<String> array = null;
 	ArrayList<Bitmap> draw = null;
+	HashMap<String, String> name = null;
+	HashMap<String, String> sdes = null;
+	HashMap<String, String> ldes = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +34,8 @@ public class ServersActity extends Activity {
 		id = i.getStringExtra("uuid");
 		username = i.getStringExtra("username");
 		array = i.getStringArrayListExtra("ids");
-		Loading loading = new Loading();
-		draw = loading.getDraws();
+		//Loading loading = new Loading();
+		//draw = loading.getDraws();
 		TextView tx = (TextView) findViewById(R.id.welcomeuptext);
 	}
 
